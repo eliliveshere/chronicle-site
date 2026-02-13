@@ -64,7 +64,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <a
               href={APP_URL}
               target="_blank"
@@ -72,6 +72,14 @@ export default function Page() {
               className="hidden text-sm font-medium text-white/60 hover:text-[#cfb53b] transition md:inline"
             >
               Start Your Chronicle
+            </a>
+            <a
+              href={KICKSTARTER_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="hidden text-sm font-medium text-white/60 hover:text-[#cfb53b] transition md:inline"
+            >
+              View Kickstarter
             </a>
             <Button href={KICKSTARTER_URL}>Back Now</Button>
           </div>
@@ -113,7 +121,7 @@ export default function Page() {
               </li>
             </ul>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button href={APP_URL}>Start Your Chronicle</Button>
+              <Button href={KICKSTARTER_URL}>Begin Your Chronicle</Button>
               <Button href={KICKSTARTER_URL} variant="secondary">
                 View Rewards
               </Button>
