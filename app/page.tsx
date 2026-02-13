@@ -4,7 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 
 const KICKSTARTER_URL =
-  "https://www.kickstarter.com/projects/chronicle-quest-app/chronicle-the-ultimate-custom-choose-your-own-adventure";
+  "https://www.kickstarter.com/projects/1597657716/1604270687?ref=aaj4uf&token=354fd94b";
+const APP_URL = "https://app.mychronicle.online";
 
 function Button({
   href,
@@ -65,12 +66,12 @@ export default function Page() {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href={KICKSTARTER_URL}
+              href={APP_URL}
               target="_blank"
               rel="noreferrer"
               className="hidden text-sm font-medium text-white/60 hover:text-[#cfb53b] transition md:inline"
             >
-              View Kickstarter
+              Start Your Chronicle
             </a>
             <Button href={KICKSTARTER_URL}>Back Now</Button>
           </div>
@@ -112,7 +113,7 @@ export default function Page() {
               </li>
             </ul>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button href={KICKSTARTER_URL}>Begin Your Chronicle</Button>
+              <Button href={APP_URL}>Start Your Chronicle</Button>
               <Button href={KICKSTARTER_URL} variant="secondary">
                 View Rewards
               </Button>
