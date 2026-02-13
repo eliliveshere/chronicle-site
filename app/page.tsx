@@ -17,7 +17,7 @@ function Button({
   variant?: "primary" | "secondary";
 }) {
   const base =
-    "inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#050505]";
+    "inline-flex items-center justify-center rounded-xl px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm font-bold uppercase tracking-wide transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#050505]";
   // Primary: Gold background, Black text, Cinzel font
   const primary =
     "bg-[#cfb53b] text-black font-cinzel hover:bg-[#bfa32a] hover:shadow-[0_0_20px_rgba(207,181,59,0.3)] focus:ring-[#cfb53b]";
@@ -59,17 +59,17 @@ export default function Page() {
             </div>
             <div className="leading-tight">
               <div className="font-cinzel text-lg font-bold tracking-wide">Chronicle</div>
-              <div className="text-[10px] uppercase tracking-widest text-white/50">
+              <div className="hidden md:block text-[10px] uppercase tracking-widest text-white/50">
                 A Legend Only You Will Live
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 md:gap-6">
             <a
               href={APP_URL}
               target="_blank"
               rel="noreferrer"
-              className="hidden text-sm font-medium text-white/60 hover:text-[#cfb53b] transition md:inline"
+              className="text-white/60 hover:text-[#cfb53b] transition text-xs md:text-sm font-medium mr-2 md:mr-0"
             >
               Start Your Chronicle
             </a>
