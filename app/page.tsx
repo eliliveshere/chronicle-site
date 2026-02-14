@@ -90,7 +90,7 @@ export default function Page() {
               <Pill>AI Story Engine</Pill>
             </div>
             <h1 className="font-cinzel text-4xl font-bold tracking-tight md:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-white/60 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]">
-              One choice. <br />Once per day.
+              Your legend. Your choice.
             </h1>
             <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-lg">
               Chronicle generates a fresh scene in your story each day — complete
