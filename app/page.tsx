@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 const KICKSTARTER_URL =
   "https://www.kickstarter.com/projects/1597657716/1604270687?ref=aaj4uf&token=354fd94b";
-const APP_URL = "https://app.mychronicle.online";
 
 function Button({
   href,
@@ -65,14 +64,6 @@ export default function Page() {
             </div>
           </div>
           <div className="flex items-center gap-2 md:gap-6">
-            <a
-              href={APP_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="text-white/60 hover:text-[#cfb53b] transition text-xs md:text-sm font-medium mr-2 md:mr-0"
-            >
-              Start Your Chronicle
-            </a>
             <a
               href={KICKSTARTER_URL}
               target="_blank"
