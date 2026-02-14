@@ -255,6 +255,129 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Founder Rewards */}
+      <section className="border-t border-white/5 bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+          <div className="text-center mb-16">
+            <h2 className="font-cinzel text-3xl md:text-4xl font-bold text-white mb-4">Founder Rewards</h2>
+            <p className="text-white/60 max-w-2xl mx-auto">
+              Unlock the full potential of Chronicle by backing us on Kickstarter.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Custom Worlds",
+                hook: "Create your own universe.",
+                restriction: "Demo: 3 preset worlds only.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-purple-400">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                  </svg>
+                ),
+                color: "bg-purple-500/10 border-purple-500/20",
+              },
+              {
+                title: "Custom Characters",
+                hook: "Create any character role you can imagine.",
+                restriction: "Demo: 3 preset roles only.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white/70">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                ),
+                color: "bg-white/5 border-white/10",
+              },
+              {
+                title: "Custom Start Scenarios",
+                hook: "Define exactly how your story begins.",
+                restriction: "Demo: 3 preset openings only.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white/70">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                ),
+                color: "bg-white/5 border-white/10",
+              },
+              {
+                title: "Multiple Chronicles",
+                hook: "Run parallel stories.",
+                restriction: "Demo: One active story loop.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-blue-400">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                  </svg>
+                ),
+                color: "bg-blue-500/10 border-blue-500/20",
+              },
+              {
+                title: "Narrator / Sound FX",
+                hook: "Immersive audio experience.",
+                restriction: "Demo: Text & Image only.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-emerald-400">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                  </svg>
+                ),
+                color: "bg-emerald-500/10 border-emerald-500/20",
+              },
+              {
+                title: "Become Your Hero",
+                hook: "Target your face onto the hero.",
+                restriction: "Exclusive Feature",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-orange-400">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+                  </svg>
+                ),
+                color: "bg-orange-500/10 border-orange-500/20",
+              },
+              {
+                title: "Printed Hero Portrait",
+                hook: 'Physical 8x10" glossy print.',
+                restriction: "Exclusive Feature",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-indigo-400">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H3.75A2.25 2.25 0 001.5 6v12a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                ),
+                color: "bg-indigo-500/10 border-indigo-500/20",
+              },
+            ].map((reward) => (
+              <a
+                key={reward.title}
+                href={KICKSTARTER_URL}
+                target="_blank"
+                rel="noreferrer"
+                className={`group relative flex flex-col justify-between rounded-xl border p-6 transition-all hover:scale-[1.02] ${reward.color} hover:border-white/30`}
+              >
+                <div>
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-black/40 backdrop-blur-sm">
+                    {reward.icon}
+                  </div>
+                  <h3 className="mb-2 font-cinzel text-lg font-bold text-white group-hover:text-[#cfb53b] transition-colors">
+                    {reward.title}
+                  </h3>
+                  <p className="text-sm text-white/70 leading-relaxed mb-4">
+                    {reward.hook}
+                  </p>
+                </div>
+                <div className="mt-2 flex items-center gap-2 text-[10px] uppercase tracking-wider text-white/40">
+                  <span className="h-1.5 w-1.5 rounded-full bg-current opacity-50" />
+                  {reward.restriction}
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button href={KICKSTARTER_URL}>View All Rewards on Kickstarter</Button>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="border-t border-white/5 bg-[#050505]">
         <div className="mx-auto max-w-6xl px-4 py-20">
